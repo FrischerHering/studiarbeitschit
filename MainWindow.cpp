@@ -9,14 +9,14 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    QObject::connect(ui->menuBar, &QMenuBar::triggered, [](QAction* action)
-    {
-
-    });
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::onLoadVideo()
+{
+    m_videoLoader.loadFromDialog();
 }

@@ -32,6 +32,7 @@ std::optional<Video> VideoLoader::loadFromDialog()
 
 std::optional<Video> VideoLoader::loadFromUrl(const QUrl &url)
 {
-
+    QMediaPlayer mediaPlayer;
+    
     return std::nullopt;
 }
