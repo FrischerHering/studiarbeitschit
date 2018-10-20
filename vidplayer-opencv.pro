@@ -26,10 +26,12 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        MainWindow.cpp
+        MainWindow.cpp \
+    VideoLoader.cpp
 
 HEADERS += \
-        MainWindow.hpp
+        MainWindow.hpp \
+    VideoLoader.hpp
 
 FORMS += \
         MainWindow.ui
